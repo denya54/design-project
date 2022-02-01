@@ -1,0 +1,25 @@
+
+.footerBlock {
+    background-color: #bcbdc3;
+    min-height: 30vh;
+}
+
+.footerContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    color: white;
+    background-color: pink;
+}
+
+.footer {
+    border: 1px solid white;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}

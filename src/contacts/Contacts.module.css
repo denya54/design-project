@@ -1,0 +1,46 @@
+.contactsBlock {
+    background-color: black;
+    min-height: 40vh;
+}
+
+.contactsContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    color: white;
+}
+
+.contacts {
+    border: 1px solid greenyellow;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.contacts textarea {
+    margin-bottom: 20px;
+}
+
+.contacts input {
+    height: 20px;
+    margin-block-end: 10px;
+}
+
+.contacts textarea {
+    height: 40px;
+}
+
+.but {
+}
+
+@media screen and (max-width: 500px) {
+    .contacts {
+        width: 100%;
+    }
+}
