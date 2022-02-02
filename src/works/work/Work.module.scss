@@ -1,0 +1,78 @@
+@import "/src/common/styles/scss/variables";
+
+.work {
+  width: 450px;
+  background-color: $bgColorItem;
+  border: 1px solid rgba(255, 255, 255, .07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .icon {
+    height: 300px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+    .btnView {
+      padding: 10px 20px;
+      border: 1px solid gray;
+      position: relative;
+      z-index: 1;
+      background-color: #29363f;
+      color: #f5f5f5;
+      &:hover {
+        background-color: $hoverButtonColor;
+      }
+    }
+  }
+  .workInfo {
+    padding: 20px;
+    .workTitle {
+      font-family: $textStyle;
+      margin: 2px 0;
+      font-size: 18px;
+      color: $textTitleColor;
+      font-weight: 600;
+      font-style: normal;
+    }
+    .description {
+      font-family: $textStyle;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1em;
+      color: $textNotTitleColor;
+      margin: 0 0 15px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

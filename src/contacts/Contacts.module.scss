@@ -1,0 +1,48 @@
+@import "src/common/styles/scss/variables";
+
+.contactsBlock {
+    background-color: $bgColorPage;
+    min-height: 40vh;
+    .contactsContainer {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        .contacts {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media screen and (max-width: 500px) {
+                width: 100%;
+            }
+            & textarea {
+                color: $textTitleColor;
+                margin-bottom: 20px;
+                height: 40px;
+                border: 2px solid #ced4da;
+                border-radius: 4px;
+                background-color: $bgColorPage;
+            }
+            & input {
+                color: $textTitleColor;
+                height: 20px;
+                margin-block-end: 10px;
+                border: 2px solid #ced4da;
+                border-radius: 4px;
+                background-color: $bgColorPage;
+            }
+            .but {
+                padding: 10px 20px;
+                border: 2px solid #ced4da;
+                position: relative;
+                z-index: 1;
+                background-color: rgba(255, 255, 255, .05);
+                color: #f5f5f5;
+                &:hover {
+                    background-color: $hoverButtonColor;
+                }
+            }
+        }
+    }
+}

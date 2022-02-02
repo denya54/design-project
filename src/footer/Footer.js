@@ -1,15 +1,15 @@
 import React from "react";
-import styles from './Footer.module.css'
+import styles from './Footer.module.scss'
 import styleContainer from './../common/styles/Container.module.css'
 import {Link} from "./link/Link";
 
 export const Footer = () => {
 
     const myLinks = [
-        {id: 1001, name: '', ico: ''},
-        {id: 1002, name: '', ico: ''},
-        {id: 1003, name: '', ico: ''},
-        {id: 1004, name: '', ico: ''}
+        {id: 1001, name: 'Instagram', ico: ''},
+        {id: 1002, name: 'Facebook', ico: ''},
+        {id: 1003, name: 'LinkedIn', ico: ''},
+        {id: 1004, name: 'VK', ico: ''}
     ]
 
     return (
@@ -19,13 +19,14 @@ export const Footer = () => {
                 <div className={styles.footer}>
                     {myLinks.map(lk => {
                         return <Link
-                        key={lk.id}
-                        ico={lk.ico}
+                            name={lk.name}
+                            key={lk.id}
+                            ico={lk.ico}
                         />
                     })}
 
                 </div>
-                <span>©2022 All rights reserved</span>
+                <span className={styles.description}>©2022 All rights not reserved</span>
             </div>
 
         </div>

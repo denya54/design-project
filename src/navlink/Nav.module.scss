@@ -1,0 +1,17 @@
+@import "src/common/styles/scss/variables";
+
+.nav {
+    border: 1px solid white;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    & a {
+        color: $textTitleColor;
+        font-family: $textStyle;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+}
+

@@ -1,0 +1,36 @@
+@import "src/common/styles/scss/variables";
+
+.mainBlock {
+    min-height: 100vh;
+    background-color: $bgColorPage;
+    margin-top: 30px;
+    font-family: $textStyle;
+    .greeting {
+        color: $textTitleColor;
+        width: 400px;
+        .position {
+            font-size: 16px;
+            color: #aaa;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        .aboutMe {
+            font-size: 14px;
+            font-weight: 400;
+            color: $textNotTitleColor;
+        }
+        & h1 {
+            font-size: 44px
+        }
+        & h1 span {
+            font-weight: 300
+        }
+    }
+    .photo {
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
